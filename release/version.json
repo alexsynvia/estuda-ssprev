@@ -1,7 +1,7 @@
-{
-  "versionName": "1.6",
-  "versionCode": 7,
-  "date": "2026-10-21",
-  "notes": "Versão inicial publicada no GitHub.",
-  "apkUrl": "https://github.com/alexsynvia/estuda-ssprev/releases/download/v1.6/EstudaSSPREV.apk"
+﻿{
+    "versionName":  "1.7",
+    "versionCode":  8,
+    "date":  "2026-10-21",
+    "notes":  "Primeira versao com atualizacao automatica: aviso de nova versao e conteudo extra sem reinstalar; banco com 566 questoes e 125 flashcards",
+    "apkUrl":  "https://github.com/alexsynvia/estuda-ssprev/releases/download/v1.7/EstudaSSPREV.apk"
 }
