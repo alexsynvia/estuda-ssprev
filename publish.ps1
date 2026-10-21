@@ -1,4 +1,4 @@
-# Publica uma nova versão: sobe a versão, gera o APK assinado, cria a Release no GitHub e atualiza release/version.json.
+﻿# Publica uma nova versão: sobe a versão, gera o APK assinado, cria a Release no GitHub e atualiza release/version.json.
 # Uso:  .\publish.ps1 -Notes "Novas questões de LRF e correções"            (incrementa 1.6 -> 1.7 e versionCode +1)
 #       .\publish.ps1 -Notes "..." -Version 2.0                                (define a versão manualmente)
 #       .\publish.ps1 -ContentOnly -Notes "..."                                (só publica release/extra.json: conteúdo sem reinstalar)
@@ -44,7 +44,7 @@ if (-not (Test-Path EstudaSSPREV.apk)) { Write-Host "APK não gerado" -Foregroun
 # 3) version.json
 $apkUrl = "https://github.com/$repo/releases/download/v$Version/EstudaSSPREV.apk"
 $json = [ordered]@{ versionName = $Version; versionCode = $newCode; date = (Get-Date -Format 'yyyy-MM-dd'); notes = $Notes; apkUrl = $apkUrl }
-($json | ConvertTo-Json) | Set-Content release/version.json -Encoding UTF8
+[IO.File]::WriteAllText((Join-Path $PSScriptRoot 'release\version.json'), ($json | ConvertTo-Json), (New-Object Text.UTF8Encoding $false))
 
 # 4) commit, tag, release
 Run "git add -A"

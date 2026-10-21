@@ -1,4 +1,4 @@
-# Gera o APK assinado (release). Uso: .\build-apk.ps1
+﻿# Gera o APK assinado (release). Uso: .\build-apk.ps1
 $ErrorActionPreference = 'Continue'
 $env:JAVA_HOME = (Get-ChildItem 'C:\Program Files\Microsoft\jdk-21*' | Select-Object -First 1).FullName
 $env:ANDROID_HOME = Join-Path $env:USERPROFILE 'android-sdk'
