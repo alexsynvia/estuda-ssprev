@@ -1,0 +1,35 @@
+{
+  "name": "estuda-ssprev",
+  "version": "1.0.0",
+  "description": "App Android de estudo para o concurso SSPREV (Técnico de Contabilidade Previdenciário)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/smoke.js",
+    "assets": "node scripts/gen-assets.js && node scripts/android-res.js",
+    "sync": "npx cap sync android",
+    "apk": "npx cap copy android && cd android && gradlew.bat assembleRelease",
+    "apk:debug": "npx cap copy android && cd android && gradlew.bat assembleDebug",
+    "dev": "node scripts/dev.js",
+    "provas": "node scripts/build-provas.js"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^7.6.9",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/browser": "^7.0.5",
+    "@capacitor/core": "^7.6.9",
+    "@capacitor/local-notifications": "^7.0.7",
+    "@capacitor/share": "^7.0.4",
+    "@capacitor/splash-screen": "^7.0.5",
+    "@capacitor/status-bar": "^7.0.6"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.6.9",
+    "jsdom": "^30.1.3",
+    "pdfjs-dist": "^4.10.38",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}

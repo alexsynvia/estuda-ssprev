@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B72E0"/>
+      <stop offset="1" stop-color="#3B2A86"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#g)"/>
+  <!-- livro -->
+  <g transform="translate(512 540)">
+    <path d="M-300 -200 Q-160 -250 -20 -190 L-20 230 Q-160 170 -300 220 Z" fill="#ffffff" opacity=".95"/>
+    <path d="M300 -200 Q160 -250 20 -190 L20 230 Q160 170 300 220 Z" fill="#F1EDFB" opacity=".95"/>
+    <rect x="-14" y="-200" width="28" height="430" rx="8" fill="#2A1F5E" opacity=".35"/>
+    <!-- linhas -->
+    <g stroke="#6A4FBF" stroke-width="18" stroke-linecap="round" opacity=".55">
+      <line x1="-240" y1="-110" x2="-80" y2="-135"/>
+      <line x1="-240" y1="-40" x2="-80" y2="-65"/>
+      <line x1="-240" y1="30" x2="-80" y2="5"/>
+      <line x1="80" y1="-135" x2="240" y2="-110"/>
+      <line x1="80" y1="-65" x2="240" y2="-40"/>
+    </g>
+    <!-- check -->
+    <circle cx="200" cy="110" r="130" fill="#f59e0b"/>
+    <path d="M135 115 L185 165 L275 60" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
